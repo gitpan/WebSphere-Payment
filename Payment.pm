@@ -7,7 +7,7 @@ use strict;
 use vars qw($VERSION $defaultpmurl $defaultcurrency $ua $h $defaultpmadmin $defaultgwhost
 $defaultgwport $defaultsetprof $defaultsignbrand $defaultaccountnumber $defaultcassette 
 $defaultmerole $defaultpmhost $defaultaccounttitle);
-$VERSION = '1.20';
+$VERSION = '1.21';
 
 
 #Default Values
@@ -535,7 +535,7 @@ Nothing
 
 =head1 DESCRIPTION
 
-CashRegister provides a simple Interface to the
+WebSphere::Payment provides a simple Interface to the
 API of the payment engine IBM WebSphere Payment
 Manager 2.2. It achieves this task, through commands
 send via http POST method.
@@ -549,7 +549,7 @@ send via http POST method.
 
 =item new WebSphere::Payment($pmurl,$admin,$currency,$timeout)
 
-Create a new cash register object. If no parameters
+Create a new WebSphere::Payment object. If no parameters
 are specified, the object will be initialized with
 the default values. The pmurl is the url where the
 Payment Manager servlet (PaymentServlet) is listening.
@@ -605,6 +605,7 @@ Set permissions to a user of the Realm. The user must have the same name of the 
 
 This module was originally created in Jun 2001 by Luis Moreno
 1.20 Methods: batchClose, getOpenBatchNumber, createMerchant, createPaySystem, createAccount, setUserAccessRights (Oct 2001)
+1.21 Minor documentation changes
 
 
 =head1 AUTHOR
